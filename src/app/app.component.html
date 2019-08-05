@@ -1,0 +1,8 @@
+<h2>App component</h2>
+
+<h3>Input Form</h3>
+<input type="text" name="parent-input" [(ngModel)]="parentInput">
+
+<app-hello [parent-input]="parentInput" (changeInput)="getChangeInput($event)"></app-hello>
+<hr>
+<app-hi></app-hi>
